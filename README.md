@@ -5,8 +5,10 @@ A wrapper for Haskell's Hungarian Library for project assignment.
 
 ### 1. Create data
 
+**ALL INDICES ARE 1-BASED!**
+
 Create a file people with newline separated names.
-Create a file assignments with newline separated assignment titles
+Create a file assignments with newline separated assignment titles.
 Create a file wishes with each line l holding *exactly* 3 values:
  - The line number of the first wish of student `l`
  - The line number of the second wish of student `l`
