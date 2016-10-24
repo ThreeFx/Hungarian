@@ -1,0 +1,234 @@
+
+==================== FINAL INTERFACE ====================
+2016-10-24 16:43:53.134423293 UTC
+
+interface main@main:Main 8001
+  interface hash: 3d9267fcc565cca26ad23afe128befae
+  ABI hash: fedb5ce798cb7632257fe7de80457c63
+  export-list hash: 884e1e029259a77a90596ac757f85f68
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8590d3a80e2bbb1e6a783670ddd37593
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.constructGraph
+  Main.decode
+  Main.main
+  Main.test
+module dependencies:
+package dependencies: Munkres-0.1@Munkres-0.1-AhWfrrF0QeH41TOlcxInrN
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:GHC.Exts
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  Munkres-0.1@Munkres-0.1-AhWfrrF0QeH41TOlcxInrN:Data.Algorithm.Munkres 692d0462f37a2431070edbf5606d4de6
+import  -/  array-0.5.1.1@array-0.5.1.1:Data.Array 01310623526f8acc73d1bb69e9d9530a
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.List 49b86831b79b49ce5d4d9416ecba61df
+import  -/  base-4.9.0.0:Data.OldList 0058409f994fb13ae0616e3f1e5b4dae
+import  -/  base-4.9.0.0:GHC.Arr fbccefe7cac601823d07f61ad7e915a2
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  base-4.9.0.0:System.Environment ee0914a962f5508d0fd404c89ee4999b
+import  -/  base-4.9.0.0:System.IO eb1d40aa793a4047069a5023f2ebcfe3
+import  -/  base-4.9.0.0:Text.Read 9c1be14f7e5eac8b18bcb566c5763677
+import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+e3347949ef2fa1fd8c68cd133d6335e4
+  $wdecode ::
+    [GHC.Base.String]
+    -> [GHC.Base.String]
+    -> [(GHC.Types.Int, GHC.Types.Int)]
+    -> [GHC.Base.String]
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: [GHC.Base.String])
+                   (w1 :: [GHC.Base.String])
+                   (ww :: [(GHC.Types.Int, GHC.Types.Int)]) ->
+                 GHC.Base.map
+                   @ (GHC.Types.Int, GHC.Types.Int)
+                   @ [GHC.Types.Char]
+                   (\ (ds :: (GHC.Types.Int, GHC.Types.Int)) ->
+                    case ds of wild { (,) person assignment ->
+                    case person of wild1 { GHC.Types.I# x1 ->
+                    GHC.Base.++
+                      @ GHC.Types.Char
+                      (GHC.List.$w!! @ [GHC.Types.Char] w (GHC.Prim.-# x1 1#))
+                      (GHC.CString.unpackAppendCString#
+                         ": "#
+                         (case assignment of wild2 { GHC.Types.I# x2 ->
+                          GHC.List.$w!! @ [GHC.Types.Char] w1 (GHC.Prim.-# x2 1#) })) } })
+                   ww) -}
+90c27bda4ab144cb2b4653c2c9779282
+  $wfail ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <B,U>x, Inline: [0] -}
+b5e4a34df5a3d9cae505d338967f445a
+  constructGraph ::
+    [GHC.Base.String]
+    -> [GHC.Base.String]
+    -> [[GHC.Types.Int]]
+    -> GHC.Arr.Array (GHC.Types.Int, GHC.Types.Int) GHC.Types.Int
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+ac4addc556007d85e4bee0813f4ffbf9
+  decode ::
+    [GHC.Base.String]
+    -> [GHC.Base.String]
+    -> ([(GHC.Types.Int, GHC.Types.Int)], GHC.Types.Int)
+    -> [GHC.Base.String]
+  {- Arity: 3, Strictness: <L,U><L,U><S(SL),1*U(1*U,A)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: [GHC.Base.String])
+                   (w1 :: [GHC.Base.String])
+                   (w2 :: ([(GHC.Types.Int, GHC.Types.Int)], GHC.Types.Int)) ->
+                 case w2 of ww { (,) ww1 ww2 -> Main.$wdecode w w1 ww1 }) -}
+870763b9ea55865fa682930d7258025c
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+0fdb80269f370ac686af59e275666ce7
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case System.Environment.getArgs1 s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   [] -> Main.$wfail ipv
+                   : studentFile ds
+                   -> case ds of wild1 {
+                        [] -> Main.$wfail ipv
+                        : assignFile ds2
+                        -> case ds2 of wild2 {
+                             [] -> Main.$wfail ipv
+                             : wishListFile ds3
+                             -> case GHC.IO.Handle.FD.openFile1
+                                       studentFile
+                                       GHC.IO.IOMode.ReadMode
+                                       ipv of ds4 { (#,#) ipv2 ipv3 ->
+                                case GHC.IO.Handle.Text.hGetContents1
+                                       ipv3
+                                       ipv2 of ds5 { (#,#) ipv4 ipv5 ->
+                                case GHC.IO.Handle.FD.openFile1
+                                       assignFile
+                                       GHC.IO.IOMode.ReadMode
+                                       ipv4 of ds6 { (#,#) ipv6 ipv7 ->
+                                case GHC.IO.Handle.Text.hGetContents1
+                                       ipv7
+                                       ipv6 of ds7 { (#,#) ipv8 ipv9 ->
+                                case GHC.IO.Handle.FD.openFile1
+                                       wishListFile
+                                       GHC.IO.IOMode.ReadMode
+                                       ipv8 of ds8 { (#,#) ipv10 ipv11 ->
+                                case GHC.IO.Handle.Text.hGetContents1
+                                       ipv11
+                                       ipv10 of ds9 { (#,#) ipv12 ipv13 ->
+                                GHC.IO.Handle.Text.hPutStr2
+                                  GHC.IO.Handle.FD.stdout
+                                  (let {
+                                     students :: [GHC.Base.String] = Data.OldList.lines ipv5
+                                   } in
+                                   let {
+                                     assignments :: [GHC.Base.String] = Data.OldList.lines ipv9
+                                   } in
+                                   case Data.Algorithm.Munkres.hungarianMethodBoxed
+                                          @ GHC.Types.Int
+                                          @ GHC.Arr.Array
+                                          GHC.Real.$fRealInt
+                                          (Data.Array.Base.$fIArrayArraye @ GHC.Types.Int)
+                                          (Main.constructGraph
+                                             students
+                                             assignments
+                                             (GHC.Base.map
+                                                @ [GHC.Types.Char]
+                                                @ [GHC.Types.Int]
+                                                Main.main2
+                                                (Data.OldList.lines ipv13))) of ww { (,) ww1 ww2 ->
+                                   GHC.Show.showList__
+                                     @ [GHC.Types.Char]
+                                     GHC.Show.shows_$cshowList
+                                     (Main.$wdecode students assignments ww1)
+                                     (GHC.Types.[] @ GHC.Types.Char) })
+                                  GHC.Types.True
+                                  ipv12 } } } } } } } } } }) -}
+cf3b2d01f1e4245f7c014af0e2018146
+  main2 :: GHC.Base.String -> [GHC.Types.Int]
+  {- Arity: 1,
+     Unfolding: (\ (x1 :: GHC.Base.String) ->
+                 Data.OldList.wordsFB
+                   @ [GHC.Types.Int]
+                   Main.main3
+                   (GHC.Types.[] @ GHC.Types.Int)
+                   x1) -}
+fc6245a61e9be7975f116b8cec2c443a
+  main3 :: [GHC.Types.Char] -> [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Arity: 2,
+     Unfolding: (\ (x1 :: [GHC.Types.Char])
+                   (ys :: [GHC.Types.Int])[OneShot] ->
+                 GHC.Types.:
+                   @ GHC.Types.Int
+                   (case Text.Read.readEither6
+                           @ GHC.Types.Int
+                           (Text.ParserCombinators.ReadP.run
+                              @ GHC.Types.Int
+                              Main.main6
+                              x1) of wild {
+                      [] -> Main.main5
+                      : x2 ds
+                      -> case ds of wild1 { [] -> x2 : ipv ipv1 -> Main.main4 } })
+                   ys) -}
+2f36c646821e3517047298cbab184af1
+  main4 :: GHC.Types.Int
+  {- Strictness: x -}
+56abe478d215a60a145ff3973b80dc91
+  main5 :: GHC.Types.Int
+  {- Strictness: x -}
+676ec759d12624b5353d601b13991773
+  main6 :: Text.ParserCombinators.ReadP.P GHC.Types.Int
+  {- Unfolding: ((GHC.Read.$fReadInt3
+                    GHC.Read.$fReadInt_$sconvertInt
+                    Text.ParserCombinators.ReadPrec.minPrec)
+                   `cast`
+                 (Text.ParserCombinators.ReadP.N:ReadP[0] <GHC.Types.Int>_R)
+                   @ GHC.Types.Int
+                   (Text.Read.readEither5 @ GHC.Types.Int)) -}
+888625191da6b1f6b695663f3152a712
+  main7 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+a737a9785b4f37b95ba4c035bcb4f62e
+  test :: t
+  {- Strictness: b -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

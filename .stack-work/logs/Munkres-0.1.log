@@ -1,0 +1,25 @@
+Configuring Munkres-0.1...
+Building Munkres-0.1...
+Preprocessing library Munkres-0.1...
+[1 of 1] Compiling Data.Algorithm.Munkres ( Data/Algorithm/Munkres.hs, .stack-work/dist/x86_64-linux-ncurses6/Cabal-1.24.0.0/build/Data/Algorithm/Munkres.o )
+
+Data/Algorithm/Munkres.hs:39:1: warning: [-Wunused-imports]
+    The import of ‘Data.Array.MArray’ is redundant
+      except perhaps to import instances from ‘Data.Array.MArray’
+    To import instances alone, use: import Data.Array.MArray()
+
+Data/Algorithm/Munkres.hs:110:1: warning:
+    SPECIALISE pragma for non-overloaded function ‘alternate’
+
+Data/Algorithm/Munkres.hs:355:5: warning: [-Wunused-do-bind]
+    A do-notation statement discarded a result of type ‘[[()]]’
+    Suppress this warning by saying
+      ‘_ <- ($) forM rowsNC \ i -> ($) forM colsNC \ j -> do { ... }’
+
+Data/Algorithm/Munkres.hs:359:5: warning: [-Wunused-do-bind]
+    A do-notation statement discarded a result of type ‘[[()]]’
+    Suppress this warning by saying
+      ‘_ <- ($) forM rowsC \ i -> ($) forM colsC \ j -> do { ... }’
+Installing library in
+/home/ben/programming/other/hungarian/.stack-work/install/x86_64-linux-ncurses6/lts-7.5/8.0.1/lib/x86_64-linux-ghc-8.0.1/Munkres-0.1-AhWfrrF0QeH41TOlcxInrN
+Registering Munkres-0.1...
