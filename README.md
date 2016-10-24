@@ -1,6 +1,10 @@
 # Hungarian
 A wrapper for Haskell's Hungarian Library for project assignment.
 
+This is really hacky and not at all a well-programmed and safe approach. (But it works.)
+
+Do **not** use this if you expect well-defined behaviour and error handling.
+
 ## Usage
 
 ### 1. Create data
